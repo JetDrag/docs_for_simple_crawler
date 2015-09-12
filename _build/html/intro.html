@@ -79,6 +79,11 @@
 <div class="section" id="">
 <span id="id5"></span><h2>使用方法<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
 <pre class="literal-block">
+首先，需要到lib/configs_and_contants.py，将MySQL服务器常量修改成你自己的服务器。然后：
+
+example:
+run.py http://www.wooyun.org/ -d 3 -t 0.01 -p 2 -l 10000 -ll 10
+
 usage: run.py [-h] [-hd HEADERS] [-d DEPTH] [-t DELAY_TIME] [-p {1,2}]
           [-l LIMIT] [-k KEYWORD] [-lf LOGFILE] [-ll {0,10,20,30,40,50}]
           [-b {0,1}]

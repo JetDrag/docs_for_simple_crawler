@@ -36,6 +36,12 @@ simple_clawler是一个基于gevent协程网络框架的异步爬虫，配置适
 -----
 
 ## 使用方法
+    
+	首先，需要到lib/configs_and_contants.py，将MySQL服务器常量修改成你自己的服务器。然后：
+	
+    example:
+    run.py http://www.wooyun.org/ -d 3 -t 0.01 -p 2 -l 10000 -ll 10
+    
     usage: run.py [-h] [-hd HEADERS] [-d DEPTH] [-t DELAY_TIME] [-p {1,2}]
               [-l LIMIT] [-k KEYWORD] [-lf LOGFILE] [-ll {0,10,20,30,40,50}]
               [-b {0,1}]
